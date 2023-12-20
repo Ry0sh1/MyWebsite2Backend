@@ -16,46 +16,45 @@ import java.sql.Date;
 public class Computer {
 
     @Id
-    @GeneratedValue
     private long id;
     //General Information
     @NotEmpty
     private String name;
     @NotEmpty
-    private String serialNumber;
+    private String serial_number;
     @Enumerated(value = EnumType.STRING)
     private Status status = Status.UNKNOWN;
     @Enumerated(value = EnumType.STRING)
-    private OperationalStatus operationalStatus = OperationalStatus.UNKNOWN;
+    private OperationalStatus operational_status = OperationalStatus.UNKNOWN;
     @Enumerated(value = EnumType.STRING)
-    private OperationalImpact operationalImpact = OperationalImpact.PERSON;
+    private OperationalImpact operational_impact = OperationalImpact.PERSON;
     //Owner
-    private String organizationalUnit;
-    private int costCentre;
+    private String organizational_unit;
+    private int cost_centre;
     private String location;
     @ManyToOne
     private Owner owner;
     @Enumerated(value = EnumType.STRING)
     private Property property = Property.UNKNOWN;
     //Inventory
-    private int inventoryNumber;
-    private String inventoryItem;
-    private Date endOfOperation;
+    private int inventory_number;
+    private String inventory_item;
+    private Date end_of_operation;
     //Domain Account
     private String domain;
     @Enumerated(value = EnumType.STRING)
-    private AccountStatus accountStatus = AccountStatus.ACTIVE;
+    private AccountStatus account_status = AccountStatus.ACTIVE;
     //Network Information
-    private String dnsName;
-    private String dnsServer;
-    private String standardGateway;
-    private String ipAddress;
-    private String ipV6Address;
+    private String dns_name;
+    private String dns_server;
+    private String standard_gateway;
+    private String ip_address;
+    private String ip_v6_address;
     //Device data
     private String manufacturer;
     private String model;
-    private Date yearOfManufacture;
+    private Date year_of_manufacture;
     private String prozessor;
     @Enumerated(value = EnumType.STRING)
-    private OperationSystem operationSystem = OperationSystem.WINDOWS11;
+    private OperationSystem operation_system = OperationSystem.WINDOWS11;
 }
