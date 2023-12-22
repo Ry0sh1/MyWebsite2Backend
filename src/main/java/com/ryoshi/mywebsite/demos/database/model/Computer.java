@@ -16,6 +16,7 @@ import java.sql.Date;
 public class Computer {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;
     //General Information
     @NotEmpty
