@@ -15,7 +15,7 @@ import java.util.Set;
 public class Owner {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     @NotBlank
     private String first_name;
