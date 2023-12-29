@@ -34,7 +34,7 @@ public class ComputerController {
     public ResponseEntity<Computer> addComputer(@RequestBody Computer computer){
         Computer added = computerRepository.save(computer);
         return new ResponseEntity<>(added,HttpStatus.OK);
-    }   //TODO: NOT WORKING
+    }
 
     @PutMapping("/computer/update")
     public ResponseEntity<Computer> updateComputer(@RequestBody Computer computer){
