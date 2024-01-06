@@ -56,7 +56,7 @@ public class Computer {
     private String manufacturer = null;
     private String model = null;
     private Date year_of_manufacture = null;
-    private String prozessor = null;
+    private String processor = null;
     @Enumerated(value = EnumType.STRING)
     private OperationSystem operation_system = OperationSystem.WINDOWS11;
 }
