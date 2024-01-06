@@ -12,6 +12,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/asset-manager")
+@CrossOrigin
 public class OwnerController {
 
     private final OwnerRepository ownerRepository;

@@ -11,6 +11,7 @@ import java.util.Optional;
 
 @RequestMapping("/asset-manager")
 @RestController
+@CrossOrigin
 public class ComputerController {
 
     private final ComputerRepository computerRepository;
